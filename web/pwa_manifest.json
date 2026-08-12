@@ -1,0 +1,8 @@
+{
+  "display": "standalone",
+  "name": "MindFlow",
+  "short_name": "MindFlow",
+  "start_url": "/",
+  "background_color": "#FBFBFB",
+  "theme_color": "#0F766E"
+}

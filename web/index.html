@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindFlow</title>
+  <link rel="manifest" href="pwa_manifest.json">
+  <style>
+    body { margin: 0; background: #FBFBFB; }
+    #loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; color: #0F766E; font-family: system-ui; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <div id="loading">MindFlow</div>
+  <script src="flutter.js" defer></script>
+  <script>
+    window.addEventListener('flutter-first-frame', () => {
+      document.getElementById('loading')?.remove();
+    });
+    _flutter.buildConfig = { engineInitializer: (e) => e.initializeEngine({ renderer: 'canvaskit' }) };
+  </script>
+</body>
+</html>

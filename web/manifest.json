@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0+1",
+  "name": "mindflow",
+  "environment": { "compiler": "stable" },
+  "title": "MindFlow",
+  "dart2js": { "optimizationLevel": "O4" },
+  "sources": ["lib/**", "test/**"]
+}
